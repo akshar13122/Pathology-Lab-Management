@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(184, 229, 229);
+}
+.imgLogoNavbar{
+    height: 120px;
+    width: 120px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.linksRightNavbar{
+    margin: 0px 20px;
+    border: 1px solid rgb(184, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(#3ac6bc 0 0) var(--p 0) / var(--p 0) no-repeat;
+    transition: 0.8s,background-position 0s;
+    border-radius: 5px;
+}
+.linksRightNavbar:hover{
+    background-color: rgb(12, 187, 187);
+    --p:100%;
+    color: #000000;
+}
+.rightSideNavbar{
+    display: flex;
+    height: 100%;
+}
