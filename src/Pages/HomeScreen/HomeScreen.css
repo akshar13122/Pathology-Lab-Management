@@ -21,7 +21,6 @@
 .introPart{
     width: 50%;
     padding: 40px 100px;
-    
 }
 .labLogoHomeScreen{
     width: 500px;
@@ -52,13 +51,14 @@
     align-items: center;
     height: 30px;
     cursor: pointer;
-    background: linear-gradient(#3ac6bc 0 0) var(--p 0) / var(--p 0) no-repeat;
-    transition: 0.8s,background-position 0s;
+    background: linear-gradient(#3ac6bc 0 0) var(--p,0) / var(--p,0) no-repeat;
+    transition: 0.8s, background-position 0s;
+    cursor: pointer;
 }
 .btndiv:hover{
     background-color: rgb(12, 187, 187);
-    --p:100%;
-    color: #000000;
+    --p : 100%;
+    color: #fff;
 }
 
 .testHomeScreen{
@@ -68,7 +68,7 @@
 }
 .leftPartTest{
     width: 25%;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 .totalTest{
     font-size: 28px;
@@ -77,7 +77,7 @@
 .testNameDiv{
     border: 1px solid black;
     border: 1px solid rgb(184, 229, 229);
-    height: 250px;
+    height: 270px;
     overflow-y: auto;
 }
 .testNameTitle{
@@ -86,15 +86,17 @@
     align-items: center;
     padding: 0px 10px;
     cursor: pointer;
+    border-bottom: 1px solid #3ac6bc;
     font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(#3ac6bc 0 0) var(--p 0) / var(--p 0) no-repeat;
-    transition: 0.8s,background-position 0s;
+    background: linear-gradient(#3ac6bc 0 0) var(--p,0) / var(--p,0) no-repeat;
+    transition: 0.8s, background-position 0s;
+    cursor: pointer;
 }
 .testNameTitle:hover{
     background-color: rgb(12, 187, 187);
-    --p:100%;
-    color: #000000;
+    --p : 100%;
+    color: #fff;
 }
 .rightPartTest{
     padding-top: 20px;
@@ -133,4 +135,77 @@
 }
 .spanColorChange{
     color:  rgb(38, 158, 158);
+}
+.activeNavLink{
+    background-color: #3ac6bc;
+}
+.contectHomeScreen{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(#d7f1ef,#ffffff);
+}
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.inputFeildBox{
+    height: 20px;
+    border: 1px solid #3ac6bc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.inputFeildBox:focus{
+    outline: none;
+}
+.inputFeildBox::placeholder{
+    font-size: 16px;
+    color: #3ac6bc;
+}
+.inputTextAreaMessage{
+    padding: 10px;
+    border: 1px solid #3ac6bc;
+}
+.inputTextAreaMessage:focus{
+    outline: none;
+}
+.inputTextAreaMessage::placeholder{
+    color:#3ac6bc ;
+}
+.contactFormTitle{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.sendEmailButton{
+    width: 30%;
+    border: 3px solid #3ac6bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    background: linear-gradient(#3ac6bc 0 0) var(--p,0) / var(--p,0) no-repeat;
+    transition: 0.8s, background-position 0s;
+    cursor: pointer;
+}
+.sendEmailButton:hover{
+    background-color: rgb(12, 187, 187);
+    --p : 100%;
+    color: #fff;
 }
