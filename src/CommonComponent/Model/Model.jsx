@@ -30,7 +30,6 @@ const Model = ({setOpenCreate}) => {
                             <div className="inputLabel">Mobile</div>
                             <input type='text' className='inputModel' placeholder='Enter Mobile No' />
                         </div>
-
                     </div>
 
                     <div className="inputRowModel">
