@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './Navbar.css'
 import pathology2 from '../../assets/pathology2.png'
+import Model from '../Model/Model';
 const Navbar = () => {
   const [openCreate,setOpenCreate] = useState(false);
   return (
@@ -16,61 +17,7 @@ const Navbar = () => {
         <div className="linksRightNavbar">Add Test</div>
       </div>
       {
-        openCreate &&  <div className="model">
-        <div className="modelCard">
-          <div className="modelTitleBox">
-            <div className="modelTitle" >Create New</div>
-            <div className="xButon" onClick={()=>{setOpenCreate(prev=>!prev)}}>X</div>
-          </div>
-          <div className="modelBody">
-            <div className="inputRowModel">
-              <div className="inputBox">
-                <div className="inputLabel">Name</div>
-                <input type='text' className='inputModel' placeholder='Enter a Name'/>
-              </div>
-              <div className="inputBox">
-                <div className="inputLabel">Age</div>
-                <input type='text' className='inputModel' placeholder='Enter Age'/>
-              </div>
-           
-            </div>
-
-            <div className="inputRowModel">
-              <div className="inputBox">
-                <div className="inputLabel">Address</div>
-                <input type='text' className='inputModel' placeholder='Enter Address'/>
-              </div>
-              <div className="inputBox">
-                <div className="inputLabel">Mobile</div>
-                <input type='text' className='inputModel' placeholder='Enter Mobile No'/>
-              </div>
-           
-            </div>
-
-            <div className="inputRowModel">
-              <div className="inputBox">
-                <div className="inputLabel">Examined By</div>
-                <input type='text' className='inputModel' placeholder='Examined By'/>
-              </div>
-              <div className="inputBox">
-                <div className="inputLabel">Mobile</div>
-                <input type='text' className='inputModel' placeholder='Enter Mobile No'/>
-              </div>
-            </div>
-
-            <div className="inputRowModel">
-              <div className="inputBox">
-                <div className="inputLabel">Examined By</div>
-                <input type='text' className='inputModel' placeholder='Examined By'/>
-              </div>
-              <div className="inputBox">
-                <div className="inputLabel">Mobile</div>
-                <input type='text' className='inputModel' placeholder='Enter Mobile No'/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        openCreate && <Model setOpenCreate = {setOpenCreate}/>
       }
     </div>
   )
